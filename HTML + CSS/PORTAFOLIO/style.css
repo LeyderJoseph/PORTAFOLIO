@@ -305,4 +305,60 @@ width: 60px;
 margin-top: 50px;
 }
 
+@keyframes aparecer-suave {
+    from {
+        opacity: 0; 
+    }
+        to { 
+        opacity: 1;
+    }  
+    }
 
+    header{
+        animation: aparecer-suave 1.5s ease-in-out; 
+    }
+    #CONTACTOS, #EXPERIENCIA, #PROYECTOS, #SKILLS, #SOBRE-MI {
+        animation: aparecer-suave 2.5s ease-in-out; 
+    }
+
+    @keyframes deslizar-arriba {
+        from { 
+            transform: translateY(20px);
+            opacity: 0;
+        }
+        to { 
+            transform: translateY(0);
+            opacity: 1; 
+        }
+    }
+
+    #BLANDAS,
+    #TECNICAS {
+        animation: deslizar-arriba 3s ease-in-out; 
+    }
+    #PROYECTOS article{
+        animation: deslizar-arriba 2s ease-in-out; 
+    }
+
+    @keyframes latido-boton{
+            0%{
+                transform: scale(1); 
+            }
+            50%{
+                transform: scale(1.8); 
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+     button:hover{ 
+        animation: latido-boton 0.6s ease-in-out; /*aplica la animación "latido-boton" a los botones cuando el usuario pasa el cursor sobre ellos, con una duración de 0.5 segundos y una función de temporización "ease-in-out", lo que hace que los botones tengan un efecto de latido al interactuar con ellos.*/
+     }
+
+    #PROYECTOS article, #SKILLS article, #EXPERIENCIA article{
+    transition: transform 0.4s ease; 
+    cursor: pointer;
+     }
+    #PROYECTOS article:hover, #SKILLS article:hover, #EXPERIENCIA article:hover{ 
+        transform: translateY( -10px);
+    }
