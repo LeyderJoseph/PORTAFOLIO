@@ -78,6 +78,7 @@ section{
 
 #SOBRE-MI button{
     margin: 40px;
+
     margin-left: 240px;
     background-color: rgb(2, 116, 116);
     color: azure;
@@ -118,7 +119,7 @@ section{
     border-radius: 10px;
     padding: 20px;
     margin: 20px;
-    width: 35%;
+    width: 40%;
     display: inline-block;
     vertical-align: top;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.45), inset 0 0 10px rgba(0, 255, 255, 0.3);
@@ -156,6 +157,8 @@ section{
     vertical-align: top;
     padding: 20px;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.45), inset 0 0 10px rgba(0, 255, 255, 0.3);
+    text-align: center;
+ 
 }
 
 .img-proyectos{
@@ -169,14 +172,16 @@ section{
 #PROYECTOS article h3{
     margin-bottom: 10px;
     color: #027474;
+    text-align: center;
 }
 
 #PROYECTOS article p{
     font-size: 16px;
     margin-bottom: 10px;
+    text-align: justify;
 }
 
-#PROYECTOS button{
+#PROYECTOS a{
     background-color: rgb(2, 116, 116);
     color: azure;
     border: none;
@@ -185,9 +190,11 @@ section{
     font-weight: bold;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 116, 116, 0.3);
+    text-decoration: none;
+    text-align: center;
 }
 
-#PROYECTOS button:hover{
+#PROYECTOS a:hover{
     background: linear-gradient(135deg, rgb(0, 138, 138), rgb(2, 116, 116));
     color: azure;
     cursor: pointer;
@@ -293,5 +300,9 @@ section{
     border-color: rgba(0, 255, 255, 0.9);
 }
 
+#CONTACTOS .img-redes{
+width: 60px;
+margin-top: 50px;
+}
 
 
